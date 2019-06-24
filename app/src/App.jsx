@@ -6,6 +6,7 @@ import Link from './components/Link/'
 import ElectronImg from './assets/electron.png'
 import ReactImg from './assets/react.png'
 import WebpackImg from './assets/webpack.png'
+import Dropdown from './components/Dropdown/'
 
 const logos = [
     ElectronImg,
@@ -31,7 +32,7 @@ export default class App extends Component {
                 <p>
                     If you are trying to build Electron apps using React, or you just
                     want to play around with them, feel free to use this
-                    seed as a starting point.
+                    seed as a starting point. LOL XD
                 </p>
 
                 <p>
@@ -51,6 +52,9 @@ export default class App extends Component {
                     <Link to='https://github.com/pastahito/electron-react-webpack'>
                     repository</Link>.
                 </p>
+                <Dropdown>
+
+                </Dropdown>
             </div>
         )
     }

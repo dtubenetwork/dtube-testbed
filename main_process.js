@@ -1,6 +1,8 @@
 // Basic init
 const electron = require('electron')
 const {app, BrowserWindow} = electron
+const DTube = require('./app/src/dtube')
+global.dtube = new DTube({});
 
 // Let electron reloads by itself when webpack watches changes in ./app/
 require('electron-reload')(__dirname)
@@ -10,8 +12,10 @@ let mainWindow
 
 app.on('ready', () => {
 
-    mainWindow = new BrowserWindow({width: 800, height: 600})
+    mainWindow = new BrowserWindow({width: 800, height: 600, webPreferences: {
+        nodeIntegration: true
+      }})
 
     mainWindow.loadURL(`file://${__dirname}/app/index.html`)
-
+    mainWindow.webContents.openDevTools()
 })
