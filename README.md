@@ -1,13 +1,13 @@
-# DTube desktop app
+# DTube test bed
 
 
 ## Install
 ``` bash
 # Clone the repository
-$ git clone https://gitlab.com/vaultec/dtube-desktop
+$ git clone https://github.com/dtubenetwork/dtube-testbed
 
 # Go into the repository
-$ cd dtube-desktop
+$ cd dtube-testbed
 
 # Install dependencies
 $ npm install
