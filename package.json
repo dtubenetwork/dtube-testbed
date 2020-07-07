@@ -21,7 +21,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.26.0",
     "css-loader": "^3.0.0",
-    "electron": "^5.0.4",
+    "electron": "^9.1.0",
     "electron-builder": "^20.43.0",
     "electron-rebuild": "^1.8.5",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
